@@ -1,11 +1,3 @@
-#Finally, we will make it so that if a k-mer that is
-#present in the database string is also in the query string
-#in multiple locations, then a search should be made from each
-#occurrence of the k-mer in the query string, spanning outward
-#left and right of each occurrence. To do that use kmer4.py that
-#is found under the Resources>Lab 3 (file kmer4.txt) to build up a
-#list of all occurrences of each distinct k-mer in the query
-#string, and use it to implement this change.
 def readfile(string):
     with open(string) as o:
         lines = [line.rstrip() for line in o]
